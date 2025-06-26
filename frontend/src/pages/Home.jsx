@@ -3,6 +3,7 @@ import { FaLaptopCode } from "react-icons/fa";
 import { BookOpenText, PencilLine } from "lucide-react";
 import { Typewriter } from "react-simple-typewriter";
 import codingImage from "../assets/coding2.jpg";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -20,7 +21,8 @@ const Home = () => {
           <div className="flex flex-col items-center space-y-2">
             <BookOpenText className="w-14 h-14 text-indigo-300 animate-bounce" />
             <h1 className="text-5xl sm:text-6xl text-white font-light">
-              Welcome to <span className="text-indigo-300 font-normal">Code Tales</span>
+              Welcome to{" "}
+              <span className="text-indigo-300 font-normal">Code Tales</span>
             </h1>
 
             <h2 className="text-2xl sm:text-3xl text-white">
@@ -41,9 +43,9 @@ const Home = () => {
           </div>
 
           <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
-            Code Tales is where developers become storytellers. Whether you're solving a bug at 2 AM
-            or shipping your first project, there's always a story worth sharing.
-            Connect. Inspire. Learn. 💻✨
+            Code Tales is where developers become storytellers. Whether you're
+            solving a bug at 2 AM or shipping your first project, there's always
+            a story worth sharing. Connect. Inspire. Learn. 💻✨
           </p>
 
           <div className="flex justify-center gap-4 flex-wrap pt-4">
@@ -63,32 +65,44 @@ const Home = () => {
       <div className="bg-white py-16 px-4 sm:px-8">
         <div className="max-w-6xl mx-auto space-y-14">
           <div className="text-center">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Why Code Tales?</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+              Why Code Tales?
+            </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Code Tales isn't just a blog — it's a community. Whether you're a beginner or a pro,
-              you can share your coding journey, solve real-world bugs, and connect with passionate
-              developers across the globe.
+              Code Tales isn't just a blog — it's a community. Whether you're a
+              beginner or a pro, you can share your coding journey, solve
+              real-world bugs, and connect with passionate developers across the
+              globe.
             </p>
           </div>
 
           {/* Feature Cards */}
           <div className="grid md:grid-cols-3 gap-8">
             <div className="p-6 bg-indigo-50 rounded-xl shadow hover:shadow-lg transition">
-              <h3 className="text-xl font-semibold text-indigo-700 mb-2">✍️ Write Your Story</h3>
+              <h3 className="text-xl font-semibold text-indigo-700 mb-2">
+                ✍️ Write Your Story
+              </h3>
               <p className="text-gray-600">
-                Publish personal experiences, tutorials, and deep dives that matter to you.
+                Publish personal experiences, tutorials, and deep dives that
+                matter to you.
               </p>
             </div>
             <div className="p-6 bg-yellow-50 rounded-xl shadow hover:shadow-lg transition">
-              <h3 className="text-xl font-semibold text-yellow-700 mb-2">🔍 Discover & Learn</h3>
+              <h3 className="text-xl font-semibold text-yellow-700 mb-2">
+                🔍 Discover & Learn
+              </h3>
               <p className="text-gray-600">
-                Explore thousands of blogs on web dev, data structures, system design, and more.
+                Explore thousands of blogs on web dev, data structures, system
+                design, and more.
               </p>
             </div>
             <div className="p-6 bg-pink-50 rounded-xl shadow hover:shadow-lg transition">
-              <h3 className="text-xl font-semibold text-pink-700 mb-2">🤝 Collaborate</h3>
+              <h3 className="text-xl font-semibold text-pink-700 mb-2">
+                🤝 Collaborate
+              </h3>
               <p className="text-gray-600">
-                Follow fellow developers, comment on blogs, and grow your network.
+                Follow fellow developers, comment on blogs, and grow your
+                network.
               </p>
             </div>
           </div>
@@ -98,12 +112,12 @@ const Home = () => {
             <p className="text-lg text-gray-800">
               🚀 Ready to become a part of the Code Tales community?
             </p>
-            <a
-              href="/register"
+            <Link
+              to="/register"
               className="inline-block mt-4 bg-indigo-600 text-white px-8 py-3 rounded-full text-lg shadow hover:bg-indigo-700 transition"
             >
               Get Started
-            </a>
+            </Link>
           </div>
         </div>
       </div>
